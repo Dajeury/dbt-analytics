@@ -17,14 +17,12 @@ models:
         description: "{{ doc('stripe_payment_method') }}"
         data_tests:
           - accepted_values:
-              arguments:
-                values: [credit_card, bank_transfer, coupon, gift_card]
+              values: [credit_card, bank_transfer, coupon, gift_card]
       - name: payment_status
         description: The current status of the payment. success or fail.
         data_tests:
           - accepted_values:
-              arguments:
-                values: [success, fail]
+              values: [success, fail]
       - name: payment_created
         description: The date when the payment was created.
       - name: _batched_at
